@@ -5,4 +5,6 @@ For more info on Kaprekar numbers, check the wiki: https://en.wikipedia.org/wiki
 To run, type in terminal:
 `ruby kaprekar-proof.rb`
 
-2. MacBeth analyzer: Ruby challenge done for Upcase challenge. Parses through a XML document containing MacBetch and counts the total number of lines for each speaker.
+2. MacBeth analyzer: Ruby exercise done for Upcase challenge. Parses through a XML document containing MacBeth play and counts the total number of lines for each speaker.
+To run, type in terminal:
+`macbeth-line-counter.rb`
