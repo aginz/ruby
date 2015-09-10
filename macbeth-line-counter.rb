@@ -49,7 +49,7 @@ class Play
   end
 
   # Displays total number of lines for each speaker
-  def results
+  def print_results
     speaker.each do |speaker|
       counter = 0
       line_counter.each do |n|
@@ -63,4 +63,4 @@ class Play
 end
 
 p = Play.new
-p.results
+p.print_results
