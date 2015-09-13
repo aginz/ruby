@@ -6,6 +6,7 @@ class Bracket
   def play_tournament
     get_players
     make_bracket
+    say_winner
   end
 
   private
@@ -35,7 +36,9 @@ class Bracket
       game.play_round
       @players = game.winners
     end
+  end
 
+  def say_winner
     winner = @players.pop
 
     say("Congratulations! #{winner.name.upcase} wins the tournament!")
