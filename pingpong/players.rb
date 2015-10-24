@@ -1,6 +1,9 @@
 class Player
   attr_reader :name
 
+  def self
+  end
+
   def initialize
     @name = get_name
   end

@@ -45,13 +45,14 @@ class Round
 
   def only_one_player
     player = select_random_player
-     @winners << player
-     say("#{player.name.upcase} does not have a rival and automatically wins the round.")
+    @winners << player
+    say("#{player.name.upcase} does not have a rival and automatically wins the round.")
   end
 
   def match_two_players
     until @round_players.count == 2
       @round_players << select_random_player
+      remove_last_round_player
     end
     say("Players have been selected...")
     @round_players.each do |player|
@@ -60,9 +61,10 @@ class Round
   end
 
   def select_random_player
-    player = @players.sample
-    @players.delete(player)
-    @players
-    return player
+    @players.sample
+  end
+
+  def remove_last_round_player
+    @players.delete(@round_players.last)
   end
 end

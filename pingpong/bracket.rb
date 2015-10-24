@@ -4,14 +4,14 @@ class Bracket
   end
 
   def play_tournament
-    get_players
+    players
     make_bracket
     say_winner
   end
 
   private
 
-  def get_players
+  def players
     done = false
 
     until done
